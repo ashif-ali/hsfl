@@ -64,3 +64,9 @@ The aggregated weights produced by the server are written to:
 - `/content/drive/MyDrive/HSFL_Project/server/global_peripheral_weights.pt`
 
 Make sure these paths exist in your environment (for example on Google Drive) before running the notebooks.
+
+## Dataset location
+
+Each client expects its training images to be stored under `/content/drive/MyDrive/HSFL_Project/data`. Place the subset of data for each client in
+subdirectories named `client_1`, `client_2`, and `client_3` respectively. The notebooks load their local data using PyTorch `DataLoader` instances that
+read from these folders.
